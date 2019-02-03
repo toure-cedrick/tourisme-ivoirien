@@ -1,0 +1,104 @@
+.boxImg{
+
+}
+.titreStyle{
+	color:#260126;
+	font-weight: bolder;
+	text-shadow: -3px 3px 0px orange,
+								-3px 5px 0px #fff,
+								-3px 8px 0px green;
+}
+.boxImg p{
+	text-shadow: -1px 1px 0px black;
+}
+.ouverture{ 
+	min-height:50vh;
+}
+.imgMenu{
+	perspective: 500px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url('../img/097_jhm_99_20a_p(1).jpg');
+	filter: grayscale(70%);
+}
+a.text-dark{
+	text-transform: uppercase;
+}
+.test{
+	border:2px solid black;
+}
+.question{
+	font-size: 2rem;
+}
+.question + h3{
+	font-size: 1.2rem;
+}
+/**
+ * ANIMATION ELEPHANT
+ */
+#container{
+	position: absolute;
+	transition: transform 1s;
+}
+.loading{
+	animation: succes 5s linear infinite;
+}
+.loading:hover{
+	animation: paused;
+}
+.pseudo{
+	position: absolute;
+	font-size: 2em;
+	font-family: roboto, verdana, sans-serif;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0 0 15px blue;
+	top:0;
+	left:0;
+	line-height: 200px;
+	text-align: center;
+}
+@keyframes succes{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(10deg);
+	}
+	50%{
+		transform: rotate(25deg);
+	}
+	75%{
+		transform: rotate(-25deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+/**
+ * ANIMATION COULEUR
+ */
+.boxImg span{
+	animation: couleur 10s infinite;
+}
+@keyframes couleur{
+	0%{
+		color:#FCD059;
+	}
+	16%{
+		color:#FCD059;
+	}
+	32%{
+		color:#fff;
+	}
+	48%{
+		color:#fff;
+	}
+	64%{
+		color:#007034;
+	}
+	100%{
+		color:#007034;
+	}
+}
